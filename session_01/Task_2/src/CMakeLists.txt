@@ -17,4 +17,4 @@ target_link_libraries(${PROJECT_NAME} global_src_files)
 # target_link_libraries(${PROJECT_NAME} pngpp)
 # target_link_libraries(${PROJECT_NAME} lodepng)
 
-target_link_libraries(${PROJECT_NAME} -lpng16)
+target_link_libraries(${PROJECT_NAME} -lpng16) #link lib of png++ library. CMD: libpng.config --libs
