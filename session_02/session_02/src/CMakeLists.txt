@@ -1,2 +1,1 @@
-# TODO
-
+add_library(SRC_FILES SHARED )

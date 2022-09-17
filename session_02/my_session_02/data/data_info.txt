@@ -1,0 +1,3 @@
+image: linux_test.png
+w: 160
+h: 160
