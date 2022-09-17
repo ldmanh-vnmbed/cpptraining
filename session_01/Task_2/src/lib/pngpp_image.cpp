@@ -7,7 +7,7 @@ bool pngpp_image::open_image(std::string file_path){
     }
     else
     {
-        png::image<png::rgb_pixel> image;
+        png::image<png::rgb_pixel> image(file_path);
         this->h = image.get_height();
         this->w = image.get_width();
     }
