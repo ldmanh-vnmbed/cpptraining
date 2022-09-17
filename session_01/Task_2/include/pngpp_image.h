@@ -7,6 +7,6 @@ private:
     unsigned int w = 0;
 public:
     bool open_image(std::string image_path);
-    int getH();
-    int getW();
+    unsigned int getH();
+    unsigned int getW();
 };

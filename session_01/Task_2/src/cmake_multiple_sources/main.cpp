@@ -1,4 +1,4 @@
-#define PNGPP 0
+#define PNGPP 1
 
 #if PNGPP
 #include "pngpp_image.h"
@@ -7,11 +7,14 @@
 #endif
 
 #include "foo.h"
+#include <iostream>
+#include <filesystem>
 
-std::string file_path = "/home/manhld/workspace/cpptraining-master/session_01/Task_2/data/linux_test.png";
+std::string file_path = "/home/manhld/workspace/cpptraining/session_01/Task_2/data/linux_test.png";
+
 int main()
 {
-    #if PNGPP
+#if PNGPP
         pngpp_image image;
         if(image.open_image(file_path)){
             std::cout<<"Image Height: "<<image.getH()<<std::endl;

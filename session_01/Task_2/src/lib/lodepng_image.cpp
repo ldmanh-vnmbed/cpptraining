@@ -7,7 +7,7 @@ bool lodepng_image::open_image(std::string file_path){
   std::vector<unsigned char> image;
   lodepng::State state;
   bool status = lodepng::load_file(buffer,file_path);
-  if(!status){
+  if(status){
     std::cout<<"LodePNG...Image is not exist. Please check the file path...\n";
     return false;
   } else {
