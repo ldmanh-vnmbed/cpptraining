@@ -5,6 +5,6 @@ std::string file_path = "/home/manhld/workspace/cpptraining/session_02/my_sessio
 
 int main(){
     baseimg<lodepng_image> image;
-    image.open(file_path);
+    image.open(file_path); //call open_image in lodepng_image
     return 0;
 }

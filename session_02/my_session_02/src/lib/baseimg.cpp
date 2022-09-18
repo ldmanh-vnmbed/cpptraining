@@ -1,7 +1,7 @@
 #include "baseimg.h"
 
 template<class C>
-bool baseimg<C>::open(std::string file_path){
+C baseimg<C>::open(std::string file_path){
     C temp;
     return temp.open_image(file_path);
 }
