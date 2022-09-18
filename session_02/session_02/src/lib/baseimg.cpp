@@ -1,3 +1,6 @@
 #include "baseimg.h"
 
-void baseImg::
+bool baseimg::open(std::string file_path){
+    
+    return true;
+}

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(training VERSION 1.0)
+project(task_2 VERSION 1.0)
 
-include_directories(include)
+enable_testing()
 
 add_subdirectory(src)

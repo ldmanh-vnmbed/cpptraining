@@ -1,26 +1,17 @@
 #include "baseimg.h"
 
-void baseimg::open(std::string file_path){
-
+template<class C>
+bool baseimg<C>::open(std::string file_path){
+    C temp;
+    return temp.open_image(file_path);
 }
 
-void baseimg::set_name(std::string name){
-
+template<class C>
+void baseimg<C>::set_name(std::string name){
+    this->name = name;
 }
 
-std::string baseimg::get_name(){
+template<class C>
+std::string baseimg<C>::get_name(){
     return name;
-}
-
-bool pngpp_image::open_image(std::string file_path){
-    if(!std::filesystem::exists(file_path)){
-        return false
-    } else {
-        png::image<png::gray_pixel> image;
-    }
-    return true;
-}
-
-bool lodepng_image::open_image(std::string file_path){
-    
 }
